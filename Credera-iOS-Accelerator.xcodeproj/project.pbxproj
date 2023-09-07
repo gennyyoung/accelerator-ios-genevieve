@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B8342F0E2A9685980065174E /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F0D2A9685980065174E /* TabView.swift */; };
+		B8342F0E2A9685980065174E /* NavigationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F0D2A9685980065174E /* NavigationComponent.swift */; };
 		B8342F112A9687B70065174E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F102A9687B70065174E /* Constants.swift */; };
 		B8342F132A968E410065174E /* SampleCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F122A968E410065174E /* SampleCollectionView.swift */; };
 		B8342F202A969BDF0065174E /* FilmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F192A969BDE0065174E /* FilmService.swift */; };
@@ -26,13 +26,15 @@
 		B8342F382A96A94E0065174E /* SampleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F372A96A94E0065174E /* SampleScrollView.swift */; };
 		B8342F3A2A96AC9D0065174E /* SampleStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F392A96AC9D0065174E /* SampleStackView.swift */; };
 		B8342F3C2A96ADAA0065174E /* SampleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F3B2A96ADAA0065174E /* SampleTableView.swift */; };
+		B84417DE2AA8FE2000F4BD08 /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84417DD2AA8FE2000F4BD08 /* SearchScreen.swift */; };
 		B88F0C262A8F296C006D5D13 /* Credera_iOS_AcceleratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F0C252A8F296C006D5D13 /* Credera_iOS_AcceleratorApp.swift */; };
-		B88F0C282A8F296C006D5D13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F0C272A8F296C006D5D13 /* ContentView.swift */; };
+		B88F0C282A8F296C006D5D13 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F0C272A8F296C006D5D13 /* HeaderComponent.swift */; };
 		B88F0C2A2A8F296D006D5D13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88F0C292A8F296D006D5D13 /* Assets.xcassets */; };
 		B88F0C2E2A8F296D006D5D13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88F0C2D2A8F296D006D5D13 /* Preview Assets.xcassets */; };
 		B88F0C382A8F296D006D5D13 /* Credera_iOS_AcceleratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F0C372A8F296D006D5D13 /* Credera_iOS_AcceleratorTests.swift */; };
 		B88F0C422A8F296D006D5D13 /* Credera_iOS_AcceleratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F0C412A8F296D006D5D13 /* Credera_iOS_AcceleratorUITests.swift */; };
 		B88F0C442A8F296D006D5D13 /* Credera_iOS_AcceleratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F0C432A8F296D006D5D13 /* Credera_iOS_AcceleratorUITestsLaunchTests.swift */; };
+		B8C838EC2A9E842D001CD097 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C838EB2A9E842D001CD097 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B8342F0D2A9685980065174E /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		B8342F0D2A9685980065174E /* NavigationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationComponent.swift; sourceTree = "<group>"; };
 		B8342F102A9687B70065174E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B8342F122A968E410065174E /* SampleCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionView.swift; sourceTree = "<group>"; };
 		B8342F192A969BDE0065174E /* FilmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmService.swift; sourceTree = "<group>"; };
@@ -72,9 +74,10 @@
 		B8342F372A96A94E0065174E /* SampleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleScrollView.swift; sourceTree = "<group>"; };
 		B8342F392A96AC9D0065174E /* SampleStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleStackView.swift; sourceTree = "<group>"; };
 		B8342F3B2A96ADAA0065174E /* SampleTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableView.swift; sourceTree = "<group>"; };
+		B84417DD2AA8FE2000F4BD08 /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
 		B88F0C222A8F296C006D5D13 /* Credera-iOS-Accelerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Credera-iOS-Accelerator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88F0C252A8F296C006D5D13 /* Credera_iOS_AcceleratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credera_iOS_AcceleratorApp.swift; sourceTree = "<group>"; };
-		B88F0C272A8F296C006D5D13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B88F0C272A8F296C006D5D13 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
 		B88F0C292A8F296D006D5D13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B88F0C2B2A8F296D006D5D13 /* Credera_iOS_Accelerator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Credera_iOS_Accelerator.entitlements; sourceTree = "<group>"; };
 		B88F0C2D2A8F296D006D5D13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -83,6 +86,7 @@
 		B88F0C3D2A8F296D006D5D13 /* Credera-iOS-AcceleratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Credera-iOS-AcceleratorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88F0C412A8F296D006D5D13 /* Credera_iOS_AcceleratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credera_iOS_AcceleratorUITests.swift; sourceTree = "<group>"; };
 		B88F0C432A8F296D006D5D13 /* Credera_iOS_AcceleratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credera_iOS_AcceleratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B8C838EB2A9E842D001CD097 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,17 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		B84417DC2AA8FDFC00F4BD08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B8342F122A968E410065174E /* SampleCollectionView.swift */,
+				B8342F372A96A94E0065174E /* SampleScrollView.swift */,
+				B8342F3B2A96ADAA0065174E /* SampleTableView.swift */,
+				B8342F392A96AC9D0065174E /* SampleStackView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B88F0C192A8F296C006D5D13 = {
 			isa = PBXGroup;
 			children = (
@@ -171,13 +186,10 @@
 		B88F0C242A8F296C006D5D13 /* Credera-iOS-Accelerator */ = {
 			isa = PBXGroup;
 			children = (
-				B8342F122A968E410065174E /* SampleCollectionView.swift */,
-				B8342F372A96A94E0065174E /* SampleScrollView.swift */,
-				B8342F392A96AC9D0065174E /* SampleStackView.swift */,
+				B84417DC2AA8FDFC00F4BD08 /* Views */,
+				B8C838EA2A9E7BF0001CD097 /* Components */,
+				B8C838E92A9E7BCC001CD097 /* Screens */,
 				B88F0C252A8F296C006D5D13 /* Credera_iOS_AcceleratorApp.swift */,
-				B8342F3B2A96ADAA0065174E /* SampleTableView.swift */,
-				B88F0C272A8F296C006D5D13 /* ContentView.swift */,
-				B8342F0D2A9685980065174E /* TabView.swift */,
 				B88F0C292A8F296D006D5D13 /* Assets.xcassets */,
 				B88F0C2B2A8F296D006D5D13 /* Credera_iOS_Accelerator.entitlements */,
 				B88F0C2C2A8F296D006D5D13 /* Preview Content */,
@@ -208,6 +220,24 @@
 				B88F0C432A8F296D006D5D13 /* Credera_iOS_AcceleratorUITestsLaunchTests.swift */,
 			);
 			path = "Credera-iOS-AcceleratorUITests";
+			sourceTree = "<group>";
+		};
+		B8C838E92A9E7BCC001CD097 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B8C838EB2A9E842D001CD097 /* HomeScreen.swift */,
+				B84417DD2AA8FE2000F4BD08 /* SearchScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B8C838EA2A9E7BF0001CD097 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B8342F0D2A9685980065174E /* NavigationComponent.swift */,
+				B88F0C272A8F296C006D5D13 /* HeaderComponent.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,18 +370,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B88F0C282A8F296C006D5D13 /* ContentView.swift in Sources */,
+				B88F0C282A8F296C006D5D13 /* HeaderComponent.swift in Sources */,
 				B8342F382A96A94E0065174E /* SampleScrollView.swift in Sources */,
 				B8342F332A969C1C0065174E /* GitCommit.swift in Sources */,
-				B8342F0E2A9685980065174E /* TabView.swift in Sources */,
+				B8342F0E2A9685980065174E /* NavigationComponent.swift in Sources */,
 				B8342F302A969C1C0065174E /* GitRepo.swift in Sources */,
 				B8342F342A969C1C0065174E /* User.swift in Sources */,
 				B8342F242A969BDF0065174E /* UserService.swift in Sources */,
 				B88F0C262A8F296C006D5D13 /* Credera_iOS_AcceleratorApp.swift in Sources */,
 				B8342F232A969BDF0065174E /* FilmServiceImpl.swift in Sources */,
 				B8342F202A969BDF0065174E /* FilmService.swift in Sources */,
+				B8C838EC2A9E842D001CD097 /* HomeScreen.swift in Sources */,
 				B8342F252A969BDF0065174E /* GitService.swift in Sources */,
 				B8342F322A969C1C0065174E /* FilmServiceError.swift in Sources */,
+				B84417DE2AA8FE2000F4BD08 /* SearchScreen.swift in Sources */,
 				B8342F312A969C1C0065174E /* Movie.swift in Sources */,
 				B8342F222A969BDF0065174E /* UserServiceImpl.swift in Sources */,
 				B8342F362A969C1C0065174E /* GitServiceError.swift in Sources */,

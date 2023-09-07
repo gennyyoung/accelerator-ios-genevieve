@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HeaderComponent.swift
 //  Credera-iOS-Accelerator
 //
 //  Created by Kelly Su on 8/17/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HeaderComponent: View {
     var body: some View {
         HStack {
             Image("AppLogo")
@@ -21,8 +21,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HeaderComponent_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HeaderComponent()
     }
 }
