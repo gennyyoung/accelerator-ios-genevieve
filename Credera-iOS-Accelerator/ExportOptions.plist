@@ -8,8 +8,8 @@
 	<string>BFT8RB258K</string>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>com.credera.Credera-iOS-Accelerator</key>
-		<string>Credera_Accelerator_QA_Profile</string>
+		<key>com.credera.mobile.Credera-iOS-QA</key>
+		<string>Credera Accelerator QA Profile</string>
 	</dict>
 </dict>
 </plist>
