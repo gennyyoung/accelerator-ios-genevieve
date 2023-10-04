@@ -14,7 +14,7 @@ struct CustomNavBar<Content>: View where Content: View {
     let hide : Bool
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                content
             }.navigationBarTitleDisplayMode(.inline)
@@ -29,8 +29,6 @@ struct CustomNavBar<Content>: View where Content: View {
                                   }) {
                                       Image(systemName: "chevron.left")
                                   }
-                           
-                                
                         }
                      
                        Spacer(minLength: 15)
@@ -43,26 +41,15 @@ struct CustomNavBar<Content>: View where Content: View {
                                 
                             Text(title)
                                 .multilineTextAlignment(.leading)
-                                
-                                
                         }
-                            
-                        
-                        
                     }.padding(.trailing, 70)
-                    
                 })
-                
             }
-            
-            
         }.navigationBarBackButtonHidden(true)
     }
 }
-
 struct CustomNavBar_Previews: PreviewProvider {
     static var previews: some View {
-//        CustomNavBar(title: "Credera iOS Accelerator", content: Text("Testing"),hide: false)
         CustomNavBar(title: "Credera iOS Accelerator", content: Text("Testing"), hide: true)
     }
 }

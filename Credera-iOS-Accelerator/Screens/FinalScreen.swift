@@ -16,7 +16,6 @@ struct FinalScreen: View {
                 VStack(spacing: 20){
                     Text("Navigate to first view")
                         .buttonStyle(RedButtonStyle())
-                    
                 }
 
             }
