@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		352A27512ACC1993000A2A9F /* IntermediateScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A274E2ACC1992000A2A9F /* IntermediateScreen.swift */; };
+		352A27522ACC1993000A2A9F /* FinalScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A274F2ACC1992000A2A9F /* FinalScreen.swift */; };
+		352A27532ACC1993000A2A9F /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A27502ACC1993000A2A9F /* HomeScreen.swift */; };
+		352A275C2ACC2418000A2A9F /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A275B2ACC2418000A2A9F /* CustomNavBar.swift */; };
+		359427692AD3FB8B00A37EFD /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359427682AD3FB8B00A37EFD /* MovieModel.swift */; };
+		3594276D2AD3FBFB00A37EFD /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3594276C2AD3FBFB00A37EFD /* MovieViewModel.swift */; };
+		359427712AD4489C00A37EFD /* URLExtension.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 359427702AD4489C00A37EFD /* URLExtension.swift .swift */; };
+		359427742AD448E000A37EFD /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359427732AD448E000A37EFD /* MovieService.swift */; };
 		B8342F0E2A9685980065174E /* NavigationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F0D2A9685980065174E /* NavigationComponent.swift */; };
 		B8342F112A9687B70065174E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F102A9687B70065174E /* Constants.swift */; };
 		B8342F132A968E410065174E /* SampleCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F122A968E410065174E /* SampleCollectionView.swift */; };
@@ -34,7 +42,6 @@
 		B88F0C382A8F296D006D5D13 /* Credera_iOS_AcceleratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F0C372A8F296D006D5D13 /* Credera_iOS_AcceleratorTests.swift */; };
 		B88F0C422A8F296D006D5D13 /* Credera_iOS_AcceleratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F0C412A8F296D006D5D13 /* Credera_iOS_AcceleratorUITests.swift */; };
 		B88F0C442A8F296D006D5D13 /* Credera_iOS_AcceleratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F0C432A8F296D006D5D13 /* Credera_iOS_AcceleratorUITestsLaunchTests.swift */; };
-		B8C838EC2A9E842D001CD097 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C838EB2A9E842D001CD097 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +62,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		352A274E2ACC1992000A2A9F /* IntermediateScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntermediateScreen.swift; sourceTree = "<group>"; };
+		352A274F2ACC1992000A2A9F /* FinalScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalScreen.swift; sourceTree = "<group>"; };
+		352A27502ACC1993000A2A9F /* HomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeScreen.swift; path = ../HomeScreen.swift; sourceTree = "<group>"; };
+		352A275B2ACC2418000A2A9F /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
+		359427682AD3FB8B00A37EFD /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		3594276C2AD3FBFB00A37EFD /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		3594276E2AD405D900A37EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		359427702AD4489C00A37EFD /* URLExtension.swift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLExtension.swift .swift"; sourceTree = "<group>"; };
+		359427732AD448E000A37EFD /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		B8342F0D2A9685980065174E /* NavigationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationComponent.swift; sourceTree = "<group>"; };
 		B8342F102A9687B70065174E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B8342F122A968E410065174E /* SampleCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionView.swift; sourceTree = "<group>"; };
@@ -86,7 +102,6 @@
 		B88F0C3D2A8F296D006D5D13 /* Credera-iOS-AcceleratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Credera-iOS-AcceleratorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88F0C412A8F296D006D5D13 /* Credera_iOS_AcceleratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credera_iOS_AcceleratorUITests.swift; sourceTree = "<group>"; };
 		B88F0C432A8F296D006D5D13 /* Credera_iOS_AcceleratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credera_iOS_AcceleratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B8C838EB2A9E842D001CD097 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +129,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		352A27562ACC1A5A000A2A9F /* CustomNavBar */ = {
+			isa = PBXGroup;
+			children = (
+				352A275B2ACC2418000A2A9F /* CustomNavBar.swift */,
+			);
+			path = CustomNavBar;
+			sourceTree = "<group>";
+		};
+		3594276A2AD3FBB500A37EFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				359427682AD3FB8B00A37EFD /* MovieModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3594276B2AD3FBCC00A37EFD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3594276C2AD3FBFB00A37EFD /* MovieViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3594276F2AD4488500A37EFD /* Extensions  */ = {
+			isa = PBXGroup;
+			children = (
+				359427702AD4489C00A37EFD /* URLExtension.swift .swift */,
+			);
+			path = "Extensions ";
+			sourceTree = "<group>";
+		};
+		359427722AD448CD00A37EFD /* Services  */ = {
+			isa = PBXGroup;
+			children = (
+				359427732AD448E000A37EFD /* MovieService.swift */,
+			);
+			path = "Services ";
+			sourceTree = "<group>";
+		};
 		B8342F0F2A9687A10065174E /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +241,12 @@
 		B88F0C242A8F296C006D5D13 /* Credera-iOS-Accelerator */ = {
 			isa = PBXGroup;
 			children = (
+				359427722AD448CD00A37EFD /* Services  */,
+				3594276F2AD4488500A37EFD /* Extensions  */,
+				3594276E2AD405D900A37EFD /* Info.plist */,
+				3594276B2AD3FBCC00A37EFD /* ViewModel */,
+				3594276A2AD3FBB500A37EFD /* Model */,
+				352A27562ACC1A5A000A2A9F /* CustomNavBar */,
 				B84417DC2AA8FDFC00F4BD08 /* Views */,
 				B8C838EA2A9E7BF0001CD097 /* Components */,
 				B8C838E92A9E7BCC001CD097 /* Screens */,
@@ -225,7 +286,9 @@
 		B8C838E92A9E7BCC001CD097 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				B8C838EB2A9E842D001CD097 /* HomeScreen.swift */,
+				352A27502ACC1993000A2A9F /* HomeScreen.swift */,
+				352A274E2ACC1992000A2A9F /* IntermediateScreen.swift */,
+				352A274F2ACC1992000A2A9F /* FinalScreen.swift */,
 				B84417DD2AA8FE2000F4BD08 /* SearchScreen.swift */,
 			);
 			path = Screens;
@@ -376,17 +439,24 @@
 				B8342F0E2A9685980065174E /* NavigationComponent.swift in Sources */,
 				B8342F302A969C1C0065174E /* GitRepo.swift in Sources */,
 				B8342F342A969C1C0065174E /* User.swift in Sources */,
+				352A27532ACC1993000A2A9F /* HomeScreen.swift in Sources */,
+				352A27512ACC1993000A2A9F /* IntermediateScreen.swift in Sources */,
 				B8342F242A969BDF0065174E /* UserService.swift in Sources */,
+				359427712AD4489C00A37EFD /* URLExtension.swift .swift in Sources */,
+				359427742AD448E000A37EFD /* MovieService.swift in Sources */,
 				B88F0C262A8F296C006D5D13 /* Credera_iOS_AcceleratorApp.swift in Sources */,
 				B8342F232A969BDF0065174E /* FilmServiceImpl.swift in Sources */,
 				B8342F202A969BDF0065174E /* FilmService.swift in Sources */,
-				B8C838EC2A9E842D001CD097 /* HomeScreen.swift in Sources */,
 				B8342F252A969BDF0065174E /* GitService.swift in Sources */,
 				B8342F322A969C1C0065174E /* FilmServiceError.swift in Sources */,
+				352A275C2ACC2418000A2A9F /* CustomNavBar.swift in Sources */,
 				B84417DE2AA8FE2000F4BD08 /* SearchScreen.swift in Sources */,
 				B8342F312A969C1C0065174E /* Movie.swift in Sources */,
 				B8342F222A969BDF0065174E /* UserServiceImpl.swift in Sources */,
+				359427692AD3FB8B00A37EFD /* MovieModel.swift in Sources */,
+				3594276D2AD3FBFB00A37EFD /* MovieViewModel.swift in Sources */,
 				B8342F362A969C1C0065174E /* GitServiceError.swift in Sources */,
+				352A27522ACC1993000A2A9F /* FinalScreen.swift in Sources */,
 				B8342F262A969BDF0065174E /* GitServiceImpl.swift in Sources */,
 				B8342F132A968E410065174E /* SampleCollectionView.swift in Sources */,
 				B8342F3C2A96ADAA0065174E /* SampleTableView.swift in Sources */,
@@ -548,9 +618,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Credera-iOS-Accelerator/Preview Content\"";
-				DEVELOPMENT_TEAM = BFT8RB258K;
+				DEVELOPMENT_TEAM = US9VK7SN58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Credera-iOS-Accelerator/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -589,6 +660,7 @@
 				DEVELOPMENT_TEAM = BFT8RB258K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Credera-iOS-Accelerator/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

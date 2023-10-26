@@ -19,7 +19,7 @@ struct NavigationComponent: View {
                         
                 }
                 .tag(0)
-            
+            IntermediateScreen()
             SearchScreen()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
