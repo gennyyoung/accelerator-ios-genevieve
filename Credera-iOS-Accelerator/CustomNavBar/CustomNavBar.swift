@@ -42,7 +42,7 @@ struct CustomNavBar<Content>: View where Content: View {
                             Text(title)
                                 .multilineTextAlignment(.leading)
                         }
-                    }.padding(.trailing, 70)
+                    }.padding(.trailing)
                 })
             }
         }.navigationBarBackButtonHidden(true)
