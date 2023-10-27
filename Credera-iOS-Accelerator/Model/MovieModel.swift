@@ -12,8 +12,7 @@ struct MovieModel: Codable {
 }
 
 struct Episodes1: Codable,Hashable {
-    
-        let Title: String
-        let Episode :String
-        let Released:String
+    let Title: String
+    let Episode :String
+    let Released:String
 }

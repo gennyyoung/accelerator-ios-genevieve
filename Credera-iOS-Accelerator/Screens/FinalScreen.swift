@@ -9,24 +9,29 @@ import SwiftUI
 
 struct FinalScreen: View {
     var body: some View {
-        CustomNavBar(title: "Credera iOS Accelerator", content:
-                        VStack(spacing:20) {
+        CustomNavBar(
+            title: "Credera iOS Accelerator",
+            content:
+                VStack(spacing: 20) {
 
-            NavigationLink(destination: HomeScreen()) {
-                VStack(spacing: 20){
-                    Text("Navigate to first view")
-                        .buttonStyle(RedButtonStyle())
-                }
+                    NavigationLink(destination: HomeScreen()) {
+                        VStack(spacing: 20) {
+                            Text("Navigate to first view")
+                                .buttonStyle(RedButtonStyle())
+                        }
 
-            }
-                
-            Text("This is an example of passing information from one VC to another").padding(.trailing, 55)
-                .padding(.leading, 50).font(.headline)
-                .multilineTextAlignment(.center)
-                .frame(width: 300)
-        }  , hide: true
-            )
-       
+                    }
+
+                    Text("This is an example of passing information from one VC to another")
+                        .padding(
+                            .trailing, 55
+                        )
+                        .padding(.leading, 50).font(.headline)
+                        .multilineTextAlignment(.center)
+                        .frame(width: 300)
+                }, hide: true
+        )
+
     }
 }
 

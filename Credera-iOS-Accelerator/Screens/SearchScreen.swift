@@ -11,29 +11,31 @@ import SwiftUI
 struct SearchScreen: View {
     @State private var isNavigationActive = false
     var body: some View {
-        CustomNavBar(title: "Credera iOS Accelerator", content:
-                        VStack(spacing: 20) {
-                                      NavigationLink(destination: SampleTableView()) {
-                                          Text("Sample Table View")
-                                              .buttonStyle(RedButtonStyle())
-                                      }
-                                      NavigationLink(destination: SampleCollectionView()) {
-                                          Text("Sample Collection View")
-                                              .buttonStyle(RedButtonStyle())
-                                      }
-                      
-                                      NavigationLink(destination: SampleScrollView()) {
-                                          Text("Sample Scroll View")
-                                              .buttonStyle(RedButtonStyle())
-                                      }
-                      
-                                      NavigationLink(destination: SampleStackView()) {
-                                          Text("Sample Stack View")
-                                              .buttonStyle(RedButtonStyle())
-                                      }
-                                  }, hide: false)
+        CustomNavBar(
+            title: "Credera iOS Accelerator",
+            content:
+                VStack(spacing: 20) {
+                    NavigationLink(destination: SampleTableView()) {
+                        Text("Sample Table View")
+                            .buttonStyle(RedButtonStyle())
+                    }
+                    NavigationLink(destination: SampleCollectionView()) {
+                        Text("Sample Collection View")
+                            .buttonStyle(RedButtonStyle())
+                    }
+
+                    NavigationLink(destination: SampleScrollView()) {
+                        Text("Sample Scroll View")
+                            .buttonStyle(RedButtonStyle())
+                    }
+
+                    NavigationLink(destination: SampleStackView()) {
+                        Text("Sample Stack View")
+                            .buttonStyle(RedButtonStyle())
+                    }
+                }, hide: false)
     }
-    
+
 }
 
 struct RedButtonStyle: ButtonStyle {
