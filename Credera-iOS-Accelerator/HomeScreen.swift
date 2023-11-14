@@ -11,17 +11,19 @@ import SwiftUI
 struct HomeScreen: View {
     @ObservedObject var movieVM = MoviewViewModel()
     var body: some View {
-
-        CustomNavBar(
-            title: "Credera iOS Accelerator",
-            content: VStack(spacing: 20) {
-
-                Text("MainTabBarApp:FristViewController").font(.headline)
+        NavigationView {
+            VStack(){
+                HeaderComponent(title: "Credera iOS Accelerator")
+                Spacer()
+                Text("MainTabBarApp: FirstViewController").font(.headline)
                     .multilineTextAlignment(.center)
-                NavigationLink(destination: IntermediateScreen()) {
-                    Text("Navigate to Next screen").buttonStyle(RedButtonStyle())
-                }.navigationBarBackButtonHidden(false)
-            }, hide: false)
+                NavigationLink(destination: IntermediateView().navigationTitle("Intermediate View")) {
+                    Text("Navigate to Next screen")
+                        .modifier(CustomButtonStyle())
+                }
+                Spacer()
+            }
+        }
     }
 
 }

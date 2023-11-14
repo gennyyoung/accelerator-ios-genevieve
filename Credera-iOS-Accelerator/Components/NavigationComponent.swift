@@ -13,20 +13,22 @@ struct NavigationComponent: View {
         TabView(selection: $selectedTab) {
             HomeScreen()
                 .tabItem {
-                    Image(systemName: "house.fill")
-                        .foregroundColor(Constants.ColorScheme.crederaRed)
+                    Image(systemName: "house.fill").renderingMode(.template)
                     Text("Home")
-                        
                 }
                 .tag(0)
-            IntermediateScreen()
             SearchScreen()
                 .tabItem {
-                    Image(systemName: "magnifyingglass")
-                        .foregroundColor(Color.red)
+                    Image(systemName: "magnifyingglass").renderingMode(.template)
                     Text("Search")
                 }
                 .tag(1)
-        }
+        }.accentColor(Constants.ColorScheme.crederaRed)
+    }
+}
+
+struct NavigationComponentView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationComponent()
     }
 }

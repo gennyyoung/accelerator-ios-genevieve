@@ -11,40 +11,50 @@ import SwiftUI
 struct SearchScreen: View {
     @State private var isNavigationActive = false
     var body: some View {
-        CustomNavBar(
-            title: "Credera iOS Accelerator",
-            content:
-                VStack(spacing: 20) {
-                    NavigationLink(destination: SampleTableView()) {
-                        Text("Sample Table View")
-                            .buttonStyle(RedButtonStyle())
-                    }
-                    NavigationLink(destination: SampleCollectionView()) {
-                        Text("Sample Collection View")
-                            .buttonStyle(RedButtonStyle())
-                    }
-
-                    NavigationLink(destination: SampleScrollView()) {
-                        Text("Sample Scroll View")
-                            .buttonStyle(RedButtonStyle())
-                    }
-
-                    NavigationLink(destination: SampleStackView()) {
-                        Text("Sample Stack View")
-                            .buttonStyle(RedButtonStyle())
-                    }
-                }, hide: false)
+        NavigationView {
+            VStack(spacing: 10) {
+                HeaderComponent(title: "Credera iOS Accelerator")
+                Spacer()
+                NavigationLink(destination: SampleTableView().navigationTitle("Sample Table View")) {
+                    Text("Sample Table View")
+                        .modifier(CustomButtonStyle())
+                }
+                NavigationLink(destination: SampleCollectionView().navigationTitle("Sample Collection View")) {
+                    Text("Sample Collection View")
+                        .modifier(CustomButtonStyle())
+                }
+                NavigationLink(destination: SampleScrollView().navigationTitle("Sample Scroll View")) {
+                    Text("Sample Scroll View")
+                        .modifier(CustomButtonStyle())
+                }
+                NavigationLink(destination: SampleStackView().navigationTitle("Sample Stack View")) {
+                    Text("Sample Stack View")
+                        .modifier(CustomButtonStyle())
+                }
+                Spacer()
+            }
+            .navigationBarHidden(true) // Hide the default navigation bar
+        }
     }
 
 }
 
-struct RedButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .font(.headline)
-            .foregroundColor(.white)
-            .padding(10)
+struct CustomButtonStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .padding(.leading, 20)
+            .padding(.trailing, 20)
+            .padding(.top, 12)
+            .padding(.bottom, 12)
             .background(Constants.ColorScheme.crederaRed)
-            .cornerRadius(10)
+            .foregroundColor(.white)
+            .font(.subheadline)
+            
+    }
+}
+
+struct SearchScreen_Previews: PreviewProvider {
+    static var previews: some View {
+        SearchScreen()
     }
 }

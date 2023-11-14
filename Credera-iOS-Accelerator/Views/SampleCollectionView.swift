@@ -11,20 +11,16 @@ struct SampleCollectionView: View {
     let data = (1...20).map { $0 }  // Sample data
 
     var body: some View {
-        CustomNavBar(
-            title: "Credera iOS Accelerator",
-            content:
-                ScrollView {
-                    LazyVGrid(columns: [
-                        GridItem(.adaptive(minimum: 80))  // Adjust minimum width as needed
-                    ]) {
-                        ForEach(data, id: \.self) { item in
-                            GridItemView(item: item)
-                        }
-                    }
-                    .padding()
-                }, hide: true)
-
+        ScrollView {
+            LazyVGrid(columns: [
+                GridItem(.adaptive(minimum: 80))  // Adjust minimum width as needed
+            ]) {
+                ForEach(data, id: \.self) { item in
+                    GridItemView(item: item)
+                }
+            }
+            .padding()
+        }
     }
 }
 
