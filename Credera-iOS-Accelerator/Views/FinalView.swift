@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct FinalView: View {
+    @EnvironmentObject private var themeManager : ThemeManager
+
     var body: some View {
         NavigationView{
             VStack(spacing: 20) {
                 NavigationLink(destination: HomeScreen()) {
                     VStack(spacing: 20) {
-                        Text("Navigate to first view")
-                            .modifier(CustomButtonStyle())
+                        Text("Navigate to first view").buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
                     }
                 }
                 

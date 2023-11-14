@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct IntermediateView: View {
+    @EnvironmentObject private var themeManager : ThemeManager
+
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
                 NavigationLink(destination: FinalView().navigationTitle("Final View")) {
                     VStack(spacing: 20) {
                         Text("Navigate to final view")
-                            .modifier(CustomButtonStyle())
+                            .buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
                     }
                     
                 }.navigationBarBackButtonHidden(true)

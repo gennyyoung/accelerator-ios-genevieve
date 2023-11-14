@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 struct SampleStackView: View {
+    @EnvironmentObject private var themeManager : ThemeManager
+    
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
             Text("Title")
@@ -37,12 +39,7 @@ struct SampleStackView: View {
                 print("Button Tapped")
             }) {
                 Text("Tap Me")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Constants.ColorScheme.crederaRed)
-                    .cornerRadius(10)
-            }
+            }.buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
         }
     }
 }

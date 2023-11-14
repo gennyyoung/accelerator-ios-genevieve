@@ -8,6 +8,8 @@ import SwiftUI
 
 struct NavigationComponent: View {
     @State private var selectedTab = 0
+    
+    @EnvironmentObject private var themeManager : ThemeManager
 
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -23,7 +25,7 @@ struct NavigationComponent: View {
                     Text("Search")
                 }
                 .tag(1)
-        }.accentColor(Constants.ColorScheme.crederaRed)
+        }.accentColor(themeManager.selectedTheme.primaryColor)
     }
 }
 
