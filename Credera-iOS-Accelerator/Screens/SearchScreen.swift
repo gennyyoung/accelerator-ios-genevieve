@@ -34,7 +34,6 @@ struct SearchScreen: View {
             .navigationBarTitleDisplayMode(.inline)
         }
     }
-
 }
 
  struct SearchScreen_Previews: PreviewProvider {
