@@ -9,10 +9,13 @@ import SwiftUI
 
 @main
 struct Credera_iOS_AcceleratorApp: App {
+    @StateObject var themeManager = ThemeManager()
+
     var body: some Scene {
         WindowGroup {
            // HeaderComponent()
             NavigationComponent()
+                .environmentObject(themeManager)
         }
     }
 }

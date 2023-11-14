@@ -15,6 +15,12 @@
 		3594276D2AD3FBFB00A37EFD /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3594276C2AD3FBFB00A37EFD /* MovieViewModel.swift */; };
 		359427712AD4489C00A37EFD /* URLExtension.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 359427702AD4489C00A37EFD /* URLExtension.swift .swift */; };
 		359427742AD448E000A37EFD /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359427732AD448E000A37EFD /* MovieService.swift */; };
+		394E4BBF2B03D1B900DB48A8 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 394E4BBE2B03D1B900DB48A8 /* Lato-Regular.ttf */; };
+		394E4BC52B03D5EC00DB48A8 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 394E4BC42B03D5EC00DB48A8 /* Lato-Black.ttf */; };
+		394E4BC82B03D6E200DB48A8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E4BC72B03D6E200DB48A8 /* Theme.swift */; };
+		394E4BCA2B03D7D300DB48A8 /* ThemeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E4BC92B03D7D300DB48A8 /* ThemeCollection.swift */; };
+		394E4BCC2B03D9D300DB48A8 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E4BCB2B03D9D300DB48A8 /* ThemeManager.swift */; };
+		394E4BCE2B03DC7600DB48A8 /* ThemeSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E4BCD2B03DC7600DB48A8 /* ThemeSwitcherView.swift */; };
 		B8342F0E2A9685980065174E /* NavigationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F0D2A9685980065174E /* NavigationComponent.swift */; };
 		B8342F112A9687B70065174E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F102A9687B70065174E /* Constants.swift */; };
 		B8342F132A968E410065174E /* SampleCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F122A968E410065174E /* SampleCollectionView.swift */; };
@@ -71,6 +77,12 @@
 		3594276E2AD405D900A37EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		359427702AD4489C00A37EFD /* URLExtension.swift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLExtension.swift .swift"; sourceTree = "<group>"; };
 		359427732AD448E000A37EFD /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		394E4BBE2B03D1B900DB48A8 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		394E4BC42B03D5EC00DB48A8 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		394E4BC72B03D6E200DB48A8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		394E4BC92B03D7D300DB48A8 /* ThemeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCollection.swift; sourceTree = "<group>"; };
+		394E4BCB2B03D9D300DB48A8 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		394E4BCD2B03DC7600DB48A8 /* ThemeSwitcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSwitcherView.swift; sourceTree = "<group>"; };
 		B8342F0D2A9685980065174E /* NavigationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationComponent.swift; sourceTree = "<group>"; };
 		B8342F102A9687B70065174E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B8342F122A968E410065174E /* SampleCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionView.swift; sourceTree = "<group>"; };
@@ -169,6 +181,25 @@
 			path = "Services ";
 			sourceTree = "<group>";
 		};
+		394E4BBC2B03D0FF00DB48A8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				394E4BC42B03D5EC00DB48A8 /* Lato-Black.ttf */,
+				394E4BBE2B03D1B900DB48A8 /* Lato-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		394E4BC62B03D61B00DB48A8 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				394E4BC72B03D6E200DB48A8 /* Theme.swift */,
+				394E4BC92B03D7D300DB48A8 /* ThemeCollection.swift */,
+				394E4BCB2B03D9D300DB48A8 /* ThemeManager.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 		B8342F0F2A9687A10065174E /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +239,7 @@
 		B84417DC2AA8FDFC00F4BD08 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				394E4BCD2B03DC7600DB48A8 /* ThemeSwitcherView.swift */,
 				B8342F122A968E410065174E /* SampleCollectionView.swift */,
 				B8342F372A96A94E0065174E /* SampleScrollView.swift */,
 				B8342F3B2A96ADAA0065174E /* SampleTableView.swift */,
@@ -241,6 +273,8 @@
 		B88F0C242A8F296C006D5D13 /* Credera-iOS-Accelerator */ = {
 			isa = PBXGroup;
 			children = (
+				394E4BC62B03D61B00DB48A8 /* Theme */,
+				394E4BBC2B03D0FF00DB48A8 /* Fonts */,
 				359427722AD448CD00A37EFD /* Services  */,
 				3594276F2AD4488500A37EFD /* Extensions  */,
 				3594276E2AD405D900A37EFD /* Info.plist */,
@@ -407,7 +441,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394E4BC52B03D5EC00DB48A8 /* Lato-Black.ttf in Resources */,
 				B88F0C2E2A8F296D006D5D13 /* Preview Assets.xcassets in Resources */,
+				394E4BBF2B03D1B900DB48A8 /* Lato-Regular.ttf in Resources */,
 				B88F0C2A2A8F296D006D5D13 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,8 +488,11 @@
 				352A275C2ACC2418000A2A9F /* CustomNavBar.swift in Sources */,
 				B84417DE2AA8FE2000F4BD08 /* SearchScreen.swift in Sources */,
 				B8342F312A969C1C0065174E /* Movie.swift in Sources */,
+				394E4BCE2B03DC7600DB48A8 /* ThemeSwitcherView.swift in Sources */,
 				B8342F222A969BDF0065174E /* UserServiceImpl.swift in Sources */,
+				394E4BCC2B03D9D300DB48A8 /* ThemeManager.swift in Sources */,
 				359427692AD3FB8B00A37EFD /* MovieModel.swift in Sources */,
+				394E4BCA2B03D7D300DB48A8 /* ThemeCollection.swift in Sources */,
 				3594276D2AD3FBFB00A37EFD /* MovieViewModel.swift in Sources */,
 				B8342F362A969C1C0065174E /* GitServiceError.swift in Sources */,
 				352A27522ACC1993000A2A9F /* FinalScreen.swift in Sources */,
@@ -463,6 +502,7 @@
 				B8342F112A9687B70065174E /* Constants.swift in Sources */,
 				B8342F352A969C1C0065174E /* SearchResult.swift in Sources */,
 				B8342F3A2A96AC9D0065174E /* SampleStackView.swift in Sources */,
+				394E4BC82B03D6E200DB48A8 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,10 +655,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Credera-iOS-Accelerator/Credera_iOS_Accelerator.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Credera-iOS-Accelerator/Preview Content\"";
-				DEVELOPMENT_TEAM = US9VK7SN58;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Credera-iOS-Accelerator/Info.plist";
@@ -657,7 +698,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Credera-iOS-Accelerator/Preview Content\"";
-				DEVELOPMENT_TEAM = BFT8RB258K;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Credera-iOS-Accelerator/Info.plist";

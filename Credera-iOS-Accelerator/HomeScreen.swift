@@ -10,6 +10,8 @@ import SwiftUI
 
 struct HomeScreen: View {
     @ObservedObject var movieVM = MoviewViewModel()
+    @EnvironmentObject private var themeManager : ThemeManager
+
     var body: some View {
 
         CustomNavBar(
@@ -19,8 +21,14 @@ struct HomeScreen: View {
                 Text("MainTabBarApp:FristViewController").font(.headline)
                     .multilineTextAlignment(.center)
                 NavigationLink(destination: IntermediateScreen()) {
-                    Text("Navigate to Next screen").buttonStyle(RedButtonStyle())
+                    Text("Navigate to Next screen")
                 }.navigationBarBackButtonHidden(false)
+                    .buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
+                NavigationLink(destination: ThemeSwitcherView()) {
+                    Text("Navigate to Theme Switcher")
+                }.navigationBarBackButtonHidden(false)
+                    .buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
+                
             }, hide: false)
     }
 

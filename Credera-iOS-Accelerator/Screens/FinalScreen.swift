@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct FinalScreen: View {
+    @EnvironmentObject private var themeManager:ThemeManager
+
     var body: some View {
         CustomNavBar(
             title: "Credera iOS Accelerator",
@@ -17,7 +19,7 @@ struct FinalScreen: View {
                     NavigationLink(destination: HomeScreen()) {
                         VStack(spacing: 20) {
                             Text("Navigate to first view")
-                                .buttonStyle(RedButtonStyle())
+                                .buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
                         }
 
                     }
