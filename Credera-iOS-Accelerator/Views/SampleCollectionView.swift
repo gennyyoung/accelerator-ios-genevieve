@@ -25,7 +25,6 @@ struct SampleCollectionView: View {
                         }
                         .padding()
                     }.edgesIgnoringSafeArea(.all)}
-
     }
 }
 

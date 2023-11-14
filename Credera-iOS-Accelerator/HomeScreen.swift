@@ -19,15 +19,12 @@ struct HomeScreen: View {
                 Spacer()
                 Text("MainTabBarApp: FirstViewController").font(.headline)
                     .multilineTextAlignment(.center)
-                NavigationLink(destination: IntermediateView()) {
+                NavigationLink(destination: IntermediateView().navigationTitle("Intermediate View")) {
                     Text("Navigate to Next screen")
-                }.navigationBarBackButtonHidden(false)
-                    .buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
+                }.buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
                 NavigationLink(destination: ThemeSwitcherView()) {
                     Text("Navigate to Theme Switcher")
-                }.navigationBarBackButtonHidden(false)
-                    .buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
-            
+                }.buttonStyle(themeManager.selectedTheme.primaryButtonStyle)     
                 Spacer()
             }
         }
