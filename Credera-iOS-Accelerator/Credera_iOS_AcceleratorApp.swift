@@ -13,7 +13,6 @@ struct Credera_iOS_AcceleratorApp: App {
 
     var body: some Scene {
         WindowGroup {
-           // HeaderComponent()
             NavigationComponent()
                 .environmentObject(themeManager)
         }

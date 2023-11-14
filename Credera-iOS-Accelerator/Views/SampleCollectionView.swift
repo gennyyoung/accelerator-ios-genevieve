@@ -14,20 +14,17 @@ struct SampleCollectionView: View {
     private var threeColumnGrid = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
 
     var body: some View {
-        CustomNavBar(
-            title: "Credera iOS Accelerator",
-            content:
                 ScrollView {
                     ZStack{
                         //ZStack and theme manager will add a background color to the grid
-                        themeManager.selectedTheme.backgroundColor.opacity(0.5)
+                        themeManager.selectedTheme.secondaryColor.opacity(0.5)
                         LazyVGrid(columns: threeColumnGrid) {
                             ForEach(data, id: \.self) { item in
                                 GridItemView(item: item).background(.white)
                             }
                         }
                         .padding()
-                    }.edgesIgnoringSafeArea(.all)}, hide: true)
+                    }.edgesIgnoringSafeArea(.all)}
 
     }
 }
@@ -43,8 +40,7 @@ struct GridItemView: View {
             .font(.system(size: 30))
             .frame(width: 110, height: 100)  // Adjust size as needed
             .background(.white)
-            .foregroundColor(.gray)
+            .foregroundColor(themeManager.selectedTheme.secondaryColor)
             .cornerRadius(4)
-            .border(.gray, width: 1).opacity(0.5)
     }
 }

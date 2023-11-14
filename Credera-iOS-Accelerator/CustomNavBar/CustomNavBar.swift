@@ -25,15 +25,12 @@ struct CustomNavBar<Content>: View where Content: View {
                             HStack {
                                 if hide {
                                     Button(action: {
-                                        //print("button pressed")
                                         self.presentationMode.wrappedValue.dismiss()
-
                                     }) {
                                         Image(systemName: "chevron.left")
                                     }
                                 }
-
-                                Spacer(minLength: 15)
+                                Spacer()
                                 HStack {
                                     Image("AppLogo")
                                         .renderingMode(.none)
@@ -42,9 +39,10 @@ struct CustomNavBar<Content>: View where Content: View {
                                         .frame(width: 45, height: 55)
 
                                     Text(title)
-                                        .multilineTextAlignment(.leading)
+                                        .font(Font.custom("AvenirNext-DemiBold", size: 17.0))
+                                        .padding(.leading, -5)
                                 }
-                            }.padding(.trailing)
+                            }.padding(.trailing, 60)
                         })
                 }
         }.navigationBarBackButtonHidden(true)

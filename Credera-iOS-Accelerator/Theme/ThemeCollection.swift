@@ -49,11 +49,12 @@ struct CustomButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .frame(width: 300)
-            .font(.headline)
+            .font(.subheadline)
             .foregroundColor(labelColor)
             .padding(10)
-            .background(backgroundColor)
+            .background(configuration.isPressed ? Color.clear : backgroundColor)    
             .cornerRadius(8)
+        
     }
 }
 

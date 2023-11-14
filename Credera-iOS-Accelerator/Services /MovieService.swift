@@ -14,7 +14,6 @@ enum NetworkError : Error {
 }
 
 class MovieService {
-    
     func getEpisodes(completion : @escaping(Result<[Episodes1]?,NetworkError>) -> Void){
         guard let url = URL.movieURL() else {
             return completion(.failure(.BadURL))

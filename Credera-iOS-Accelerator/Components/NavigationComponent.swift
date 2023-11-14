@@ -15,17 +15,22 @@ struct NavigationComponent: View {
         TabView(selection: $selectedTab) {
             HomeScreen()
                 .tabItem {
-                    Image(systemName: "house.fill")
+                    Image(systemName: "house.fill").renderingMode(.template)
                     Text("Home")
                 }
                 .tag(0)
-            IntermediateScreen()
             SearchScreen()
                 .tabItem {
-                    Image(systemName: "magnifyingglass")
+                    Image(systemName: "magnifyingglass").renderingMode(.template)
                     Text("Search")
                 }
                 .tag(1)
         }.accentColor(themeManager.selectedTheme.primaryColor)
+    }
+}
+
+struct NavigationComponentView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationComponent()
     }
 }

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		352A27512ACC1993000A2A9F /* IntermediateScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A274E2ACC1992000A2A9F /* IntermediateScreen.swift */; };
-		352A27522ACC1993000A2A9F /* FinalScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A274F2ACC1992000A2A9F /* FinalScreen.swift */; };
+		352A27512ACC1993000A2A9F /* IntermediateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A274E2ACC1992000A2A9F /* IntermediateView.swift */; };
+		352A27522ACC1993000A2A9F /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A274F2ACC1992000A2A9F /* FinalView.swift */; };
 		352A27532ACC1993000A2A9F /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A27502ACC1993000A2A9F /* HomeScreen.swift */; };
 		352A275C2ACC2418000A2A9F /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A275B2ACC2418000A2A9F /* CustomNavBar.swift */; };
 		359427692AD3FB8B00A37EFD /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359427682AD3FB8B00A37EFD /* MovieModel.swift */; };
@@ -68,8 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		352A274E2ACC1992000A2A9F /* IntermediateScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntermediateScreen.swift; sourceTree = "<group>"; };
-		352A274F2ACC1992000A2A9F /* FinalScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalScreen.swift; sourceTree = "<group>"; };
+		352A274E2ACC1992000A2A9F /* IntermediateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntermediateView.swift; sourceTree = "<group>"; };
+		352A274F2ACC1992000A2A9F /* FinalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
 		352A27502ACC1993000A2A9F /* HomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeScreen.swift; path = ../HomeScreen.swift; sourceTree = "<group>"; };
 		352A275B2ACC2418000A2A9F /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
 		359427682AD3FB8B00A37EFD /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
@@ -244,6 +244,8 @@
 				B8342F372A96A94E0065174E /* SampleScrollView.swift */,
 				B8342F3B2A96ADAA0065174E /* SampleTableView.swift */,
 				B8342F392A96AC9D0065174E /* SampleStackView.swift */,
+				352A274E2ACC1992000A2A9F /* IntermediateView.swift */,
+				352A274F2ACC1992000A2A9F /* FinalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -321,8 +323,6 @@
 			isa = PBXGroup;
 			children = (
 				352A27502ACC1993000A2A9F /* HomeScreen.swift */,
-				352A274E2ACC1992000A2A9F /* IntermediateScreen.swift */,
-				352A274F2ACC1992000A2A9F /* FinalScreen.swift */,
 				B84417DD2AA8FE2000F4BD08 /* SearchScreen.swift */,
 			);
 			path = Screens;
@@ -476,7 +476,7 @@
 				B8342F302A969C1C0065174E /* GitRepo.swift in Sources */,
 				B8342F342A969C1C0065174E /* User.swift in Sources */,
 				352A27532ACC1993000A2A9F /* HomeScreen.swift in Sources */,
-				352A27512ACC1993000A2A9F /* IntermediateScreen.swift in Sources */,
+				352A27512ACC1993000A2A9F /* IntermediateView.swift in Sources */,
 				B8342F242A969BDF0065174E /* UserService.swift in Sources */,
 				359427712AD4489C00A37EFD /* URLExtension.swift .swift in Sources */,
 				359427742AD448E000A37EFD /* MovieService.swift in Sources */,
@@ -495,7 +495,7 @@
 				394E4BCA2B03D7D300DB48A8 /* ThemeCollection.swift in Sources */,
 				3594276D2AD3FBFB00A37EFD /* MovieViewModel.swift in Sources */,
 				B8342F362A969C1C0065174E /* GitServiceError.swift in Sources */,
-				352A27522ACC1993000A2A9F /* FinalScreen.swift in Sources */,
+				352A27522ACC1993000A2A9F /* FinalView.swift in Sources */,
 				B8342F262A969BDF0065174E /* GitServiceImpl.swift in Sources */,
 				B8342F132A968E410065174E /* SampleCollectionView.swift in Sources */,
 				B8342F3C2A96ADAA0065174E /* SampleTableView.swift in Sources */,

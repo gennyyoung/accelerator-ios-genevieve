@@ -13,14 +13,13 @@ struct HomeScreen: View {
     @EnvironmentObject private var themeManager : ThemeManager
 
     var body: some View {
-
-        CustomNavBar(
-            title: "Credera iOS Accelerator",
-            content: VStack(spacing: 20) {
-
-                Text("MainTabBarApp:FristViewController").font(.headline)
+        NavigationView {
+            VStack(){
+                HeaderComponent(title: "Credera iOS Accelerator")
+                Spacer()
+                Text("MainTabBarApp: FirstViewController").font(.headline)
                     .multilineTextAlignment(.center)
-                NavigationLink(destination: IntermediateScreen()) {
+                NavigationLink(destination: IntermediateView()) {
                     Text("Navigate to Next screen")
                 }.navigationBarBackButtonHidden(false)
                     .buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
@@ -28,8 +27,10 @@ struct HomeScreen: View {
                     Text("Navigate to Theme Switcher")
                 }.navigationBarBackButtonHidden(false)
                     .buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
-                
-            }, hide: false)
+            
+                Spacer()
+            }
+        }
     }
 
 }
