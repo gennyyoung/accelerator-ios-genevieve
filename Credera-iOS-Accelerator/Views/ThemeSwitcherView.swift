@@ -12,8 +12,6 @@ struct ThemeSwitcherView: View {
     @EnvironmentObject private var themeManager:ThemeManager
     
     var body: some View {
-        ZStack{
-            themeManager.selectedTheme.secondaryColor.ignoresSafeArea(.all)
             VStack{
                 Text("\(themeManager.selectedTheme.themeName) is selected")
                 ForEach(0..<themeManager.themes.count, id: \.self){themeCount in
@@ -26,8 +24,9 @@ struct ThemeSwitcherView: View {
                     })
                 }
                 .buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
+                Text("Secondary Color")
+                    .foregroundStyle(themeManager.selectedTheme.secondaryColor)
             }
-        }
     }
 }
 

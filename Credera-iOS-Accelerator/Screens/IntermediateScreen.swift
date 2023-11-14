@@ -19,7 +19,6 @@ struct IntermediateScreen: View {
                         NavigationLink(destination: FinalScreen()) {
                             VStack(spacing: 20) {
                                 Text("Navigate to final view")
-//                                    .tint(themeManager.selectedTheme.primaryColor)
                                     .buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
                                 
                             }

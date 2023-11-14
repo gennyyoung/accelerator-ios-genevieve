@@ -15,6 +15,8 @@ final class PrimaryTheme: Theme{
     
     var labelColor: Color = Color("LabelColor")
     
+    var backgroundColor: Color = Color("BackgroundColor")
+
     var themeName: String = "Primary Theme"
     
     var primaryButtonStyle: CustomButtonStyle {return CustomButtonStyle(backgroundColor: primaryColor, labelColor: labelColor)}
@@ -29,6 +31,8 @@ final class SecondaryTheme: Theme{
     var secondaryColor: Color = Color("2-SecondaryColor")
     
     var labelColor: Color = Color("2-LabelColor")
+    
+    var backgroundColor: Color = Color("BackgroundColor")
     
     var themeName: String = "Secondary Theme"
     

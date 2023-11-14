@@ -16,19 +16,16 @@ struct NavigationComponent: View {
             HomeScreen()
                 .tabItem {
                     Image(systemName: "house.fill")
-                        .foregroundColor(Constants.ColorScheme.crederaRed)
                     Text("Home")
-                        
                 }
                 .tag(0)
             IntermediateScreen()
             SearchScreen()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
-                        .foregroundColor(Color.red)
                     Text("Search")
                 }
                 .tag(1)
-        }
+        }.accentColor(themeManager.selectedTheme.primaryColor)
     }
 }
