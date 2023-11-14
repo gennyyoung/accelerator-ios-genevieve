@@ -37,20 +37,6 @@ struct SearchScreen: View {
 
 }
 
-// struct CustomButtonStyle: ViewModifier {
-//     func body(content: Content) -> some View {
-//         content
-//             .padding(.leading, 20)
-//             .padding(.trailing, 20)
-//             .padding(.top, 12)
-//             .padding(.bottom, 12)
-//             .background(Constants.ColorScheme.crederaRed)
-//             .foregroundColor(.white)
-//             .font(.subheadline)
-            
-//     }
-// }
-
  struct SearchScreen_Previews: PreviewProvider {
      static var previews: some View {
          SearchScreen()
