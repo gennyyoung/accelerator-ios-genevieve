@@ -9,31 +9,27 @@ import SwiftUI
 
 struct IntermediateView: View {
     @EnvironmentObject private var themeManager : ThemeManager
-
+    @Binding var navigationPath: [Route]
+    
     var body: some View {
-        NavigationView {
-            VStack(spacing: 20) {
-                NavigationLink(destination: FinalView().navigationTitle("Final View")) {
-                    VStack(spacing: 20) {
-                        Text("Navigate to final view")
-                            .buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
-                    }
-                    
-                }.navigationBarBackButtonHidden(true)
-                Text("This is an example of passing information from one VC to another")
-                    .padding(
-                        .trailing, 55
-                    )
-                    .padding(.leading, 50).font(.headline)
-                    .multilineTextAlignment(.center)
-                    .frame(width: 300)
-            }
+        VStack(spacing: 20) {
+            Button("Navigate to Final View") {
+                navigationPath.append(.finalView)
+            }.buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
+            
+            Text("This is an example of passing information from one VC to another")
+                .padding(
+                    .trailing, 55
+                )
+                .padding(.leading, 50).font(.headline)
+                .multilineTextAlignment(.center)
+                .frame(width: 300)
+            }.navigationBarTitle(Text("Intermediate View"))
         }
-    }
 }
 
-struct IntermediateView_Previews: PreviewProvider {
-    static var previews: some View {
-        IntermediateView()
-    }
-}
+//struct IntermediateView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        IntermediateView(rootIsActive: $rootIsActive)
+//    }
+//}
