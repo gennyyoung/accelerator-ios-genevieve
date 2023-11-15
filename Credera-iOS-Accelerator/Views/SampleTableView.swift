@@ -17,7 +17,7 @@ struct SampleTableView: View {
                 VStack(alignment: .leading) {
                     Spacer()
                         Text("Episode \(episode.Episode): " + episode.Title)
-                            .font(themeManager.selectedTheme.title)
+                        .font(themeManager.selectedTheme.subtitle)
                             .lineLimit(2)
                             .frame(maxWidth: .infinity, alignment: .leading)
                     Text("Released: " + episode.Released)

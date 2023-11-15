@@ -22,9 +22,9 @@ final class PrimaryTheme: Theme{
 
     var themeName: String = "Primary Theme"
     
-    var primaryButtonStyle: CustomButtonStyle {return CustomButtonStyle(backgroundColor: primaryColor, labelColor: labelColor)}
+    var primaryButtonStyle: CustomButtonStyle {return CustomButtonStyle(backgroundColor: primaryColor, labelColor: labelColor, customFont: subtitle)}
     
-    var secondaryButtonStyle: CustomButtonStyle {return CustomButtonStyle(backgroundColor: secondaryColor, labelColor: labelColor)}
+    var secondaryButtonStyle: CustomButtonStyle {return CustomButtonStyle(backgroundColor: secondaryColor, labelColor: labelColor, customFont: subtitle)}
     
     var title: Font = .custom(CustomTitle.fontName, size: CustomTitle.fontSize)
     
@@ -45,9 +45,9 @@ final class SecondaryTheme: Theme{
     
     var themeName: String = "Secondary Theme"
     
-    var primaryButtonStyle: CustomButtonStyle {return CustomButtonStyle(backgroundColor: primaryColor, labelColor: labelColor)}
+    var primaryButtonStyle: CustomButtonStyle {return CustomButtonStyle(backgroundColor: primaryColor, labelColor: labelColor, customFont: subtitle)}
     
-    var secondaryButtonStyle: CustomButtonStyle {return CustomButtonStyle(backgroundColor: secondaryColor, labelColor: labelColor)}
+    var secondaryButtonStyle: CustomButtonStyle {return CustomButtonStyle(backgroundColor: secondaryColor, labelColor: labelColor, customFont: subtitle)}
     
     var title: Font = .custom(CustomTitle.fontName, size: CustomTitle.fontSize)
     
@@ -60,11 +60,12 @@ final class SecondaryTheme: Theme{
 struct CustomButtonStyle: ButtonStyle {
     var backgroundColor: Color
     var labelColor: Color
+    var customFont: Font
     
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .frame(width: 300)
-            .font(.subheadline)
+            .font(customFont)
             .foregroundColor(labelColor)
             .padding(10)
             .background(configuration.isPressed ? Color.clear : backgroundColor)    
@@ -81,16 +82,16 @@ struct CustomButtonStyle: ButtonStyle {
  */
 struct CustomTitle {
     static let fontName = "TiemposHeadline-Black"
-    static let fontSize: CGFloat = 16
+    static let fontSize: CGFloat = 18
 }
 
 struct CustomSubtitle {
     static let fontName = "Lato-Black"
-    static let fontSize: CGFloat = 14
+    static let fontSize: CGFloat = 16
 }
 
 struct CustomBody {
     static let fontName = "Lato-Regular"
-    static let fontSize: CGFloat = 12
+    static let fontSize: CGFloat = 14
 }
 
