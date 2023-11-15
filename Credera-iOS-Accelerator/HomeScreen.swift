@@ -35,7 +35,6 @@ struct HomeScreen: View {
                 }.buttonStyle(themeManager.selectedTheme.primaryButtonStyle)     
                 Spacer()
             }
-            .navigationBarHidden(true)
             .navigationDestination(for: Route.self) { route in
                 switch route {
                 case .intermediateView:
