@@ -8,24 +8,41 @@
 import Foundation
 import SwiftUI
 
+enum Route {
+    case intermediateView
+    case finalView
+}
+
 struct HomeScreen: View {
     @ObservedObject var movieVM = MoviewViewModel()
     @EnvironmentObject private var themeManager : ThemeManager
+    // Array of Routes where the last Route is the view that is displayed
+    @State private var navigationPath: [Route] = []
 
     var body: some View {
-        NavigationView {
+        NavigationStack(path: $navigationPath) {
             VStack(){
                 HeaderComponent(title: "Credera iOS Accelerator")
                 Spacer()
                 Text("MainTabBarApp: FirstViewController").font(.headline)
                     .multilineTextAlignment(.center)
-                NavigationLink(destination: IntermediateView().navigationTitle("Intermediate View")) {
-                    Text("Navigate to Next screen")
+                Button("Navigate to Next Screen") {
+                    navigationPath.append(.intermediateView)
                 }.buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
+                
                 NavigationLink(destination: ThemeSwitcherView()) {
                     Text("Navigate to Theme Switcher")
                 }.buttonStyle(themeManager.selectedTheme.primaryButtonStyle)     
                 Spacer()
+            }
+            .navigationBarHidden(true)
+            .navigationDestination(for: Route.self) { route in
+                switch route {
+                case .intermediateView:
+                    IntermediateView(navigationPath: $navigationPath)
+                case .finalView:
+                    FinalView(navigationPath: $navigationPath)
+                }
             }
         }
     }
@@ -34,5 +51,6 @@ struct HomeScreen: View {
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
         HomeScreen()
+            .environmentObject(ThemeManager())
     }
 }

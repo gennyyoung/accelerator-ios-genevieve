@@ -10,7 +10,6 @@ import SwiftUI
 
 struct SearchScreen: View {
     @EnvironmentObject private var themeManager: ThemeManager
-    @State private var isNavigationActive = false
     
     var body: some View {
         NavigationView {
@@ -39,5 +38,6 @@ struct SearchScreen: View {
  struct SearchScreen_Previews: PreviewProvider {
      static var previews: some View {
          SearchScreen()
+             .environmentObject(ThemeManager())
      }
  }

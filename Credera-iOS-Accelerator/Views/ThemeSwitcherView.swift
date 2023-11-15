@@ -33,5 +33,6 @@ struct ThemeSwitcherView: View {
 struct ThemeSwitcherView_Previews: PreviewProvider {
     static var previews: some View {
         ThemeSwitcherView()
+            .environmentObject(ThemeManager())
     }
 }

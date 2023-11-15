@@ -52,5 +52,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "667DCDDC-83A1-4308-8C78-B5102CE2AC61"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Credera-iOS-Accelerator/HomeScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "667DCDDC-83A1-4308-8C78-B5102CE2AC61 - d345859e403db094"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Credera_iOS_Accelerator.HomeScreen.init() -&gt; Credera_iOS_Accelerator.HomeScreen"
+                  moduleName = "Credera-iOS-Accelerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kelly.su/Documents/GitHub/Credera-iOS-Accelerator/Credera-iOS-Accelerator/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "667DCDDC-83A1-4308-8C78-B5102CE2AC61 - 6e4e2eb767c5a367"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Credera_iOS_Accelerator.HomeScreen.init(movieVM: Credera_iOS_Accelerator.MoviewViewModel) -&gt; Credera_iOS_Accelerator.HomeScreen"
+                  moduleName = "Credera-iOS-Accelerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kelly.su/Documents/GitHub/Credera-iOS-Accelerator/Credera-iOS-Accelerator/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
