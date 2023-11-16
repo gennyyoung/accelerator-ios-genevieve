@@ -22,9 +22,14 @@ struct ThemeSwitcherView: View {
                         themeManager.applyTheme(themeCount)
                     }
                 }, label: {
-                    Text("\(themeManager.selectedTheme.themeName == currentTheme ? "\(currentTheme) is selected" : "Change to \(currentTheme)")")
+                    HStack{
+                        if(themeManager.selectedTheme.themeName == currentTheme){
+                            Image(systemName: "star.fill")
+                        }
+                        Text(currentTheme)
+                    }
                 }
-            )
+                )
             }
             .buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
             
@@ -55,7 +60,7 @@ struct ThemeSwitcherView: View {
 
 struct ThemeColorList: View {
     @EnvironmentObject private var themeManager:ThemeManager
-
+    
     var color: Color
     var label: String
     
