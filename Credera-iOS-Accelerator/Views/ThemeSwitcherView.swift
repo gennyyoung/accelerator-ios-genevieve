@@ -34,10 +34,10 @@ struct ThemeSwitcherView: View {
             .buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
             
             // List of the theme items
-            ThemeColorList(color: themeManager.selectedTheme.primaryColor, label: "Primary Color")
-            ThemeColorList(color: themeManager.selectedTheme.secondaryColor, label: "Secondary Color")
-            ThemeColorList(color: themeManager.selectedTheme.backgroundColor, label: "Background Color")
-            ThemeColorList(color: themeManager.selectedTheme.labelColor, label: "Label Color")
+            ThemeColorRectangle(color: themeManager.selectedTheme.primaryColor, label: "Primary Color")
+            ThemeColorRectangle(color: themeManager.selectedTheme.secondaryColor, label: "Secondary Color")
+            ThemeColorRectangle(color: themeManager.selectedTheme.backgroundColor, label: "Background Color")
+            ThemeColorRectangle(color: themeManager.selectedTheme.labelColor, label: "Label Color")
             
             HStack{
                 Text("Change to \(isDarkMode ? "Light Mode" : "Dark Mode")").font(themeManager.selectedTheme.subtitle)
@@ -58,7 +58,7 @@ struct ThemeSwitcherView: View {
     }
 }
 
-struct ThemeColorList: View {
+struct ThemeColorRectangle: View {
     @EnvironmentObject private var themeManager:ThemeManager
     
     var color: Color
