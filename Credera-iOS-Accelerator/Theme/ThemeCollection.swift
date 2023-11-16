@@ -68,9 +68,8 @@ struct CustomButtonStyle: ButtonStyle {
             .font(customFont)
             .foregroundColor(labelColor)
             .padding(10)
-            .background(configuration.isPressed ? Color.clear : backgroundColor)    
+            .background(configuration.isPressed ? Color.clear : backgroundColor) 
             .cornerRadius(8)
-        
     }
 }
 

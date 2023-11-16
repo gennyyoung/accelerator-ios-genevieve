@@ -10,11 +10,13 @@ import SwiftUI
 @main
 struct Credera_iOS_AcceleratorApp: App {
     @StateObject var themeManager = ThemeManager()
+    @AppStorage("isDarkMode") private var isDarkMode = false
 
     var body: some Scene {
         WindowGroup {
             NavigationComponent()
                 .environmentObject(themeManager)
+                .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }

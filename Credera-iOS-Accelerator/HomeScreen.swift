@@ -16,6 +16,7 @@ enum Route {
 struct HomeScreen: View {
     @ObservedObject var movieVM = MoviewViewModel()
     @EnvironmentObject private var themeManager : ThemeManager
+
     // Array of Routes where the last Route is the view that is displayed
     @State private var navigationPath: [Route] = []
 
