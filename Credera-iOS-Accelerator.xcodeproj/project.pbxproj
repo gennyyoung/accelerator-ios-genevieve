@@ -21,6 +21,7 @@
 		394E4BCA2B03D7D300DB48A8 /* ThemeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E4BC92B03D7D300DB48A8 /* ThemeCollection.swift */; };
 		394E4BCC2B03D9D300DB48A8 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E4BCB2B03D9D300DB48A8 /* ThemeManager.swift */; };
 		394E4BCE2B03DC7600DB48A8 /* ThemeSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E4BCD2B03DC7600DB48A8 /* ThemeSwitcherView.swift */; };
+		39BA64AF2B053ED0004BF750 /* TiemposHeadline-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39BA64AE2B053ED0004BF750 /* TiemposHeadline-Black.otf */; };
 		B8342F0E2A9685980065174E /* NavigationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F0D2A9685980065174E /* NavigationComponent.swift */; };
 		B8342F112A9687B70065174E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F102A9687B70065174E /* Constants.swift */; };
 		B8342F132A968E410065174E /* SampleCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F122A968E410065174E /* SampleCollectionView.swift */; };
@@ -83,6 +84,7 @@
 		394E4BC92B03D7D300DB48A8 /* ThemeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCollection.swift; sourceTree = "<group>"; };
 		394E4BCB2B03D9D300DB48A8 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		394E4BCD2B03DC7600DB48A8 /* ThemeSwitcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSwitcherView.swift; sourceTree = "<group>"; };
+		39BA64AE2B053ED0004BF750 /* TiemposHeadline-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TiemposHeadline-Black.otf"; sourceTree = "<group>"; };
 		B8342F0D2A9685980065174E /* NavigationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationComponent.swift; sourceTree = "<group>"; };
 		B8342F102A9687B70065174E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B8342F122A968E410065174E /* SampleCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		394E4BBC2B03D0FF00DB48A8 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				39BA64AE2B053ED0004BF750 /* TiemposHeadline-Black.otf */,
 				394E4BC42B03D5EC00DB48A8 /* Lato-Black.ttf */,
 				394E4BBE2B03D1B900DB48A8 /* Lato-Regular.ttf */,
 			);
@@ -442,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				394E4BC52B03D5EC00DB48A8 /* Lato-Black.ttf in Resources */,
+				39BA64AF2B053ED0004BF750 /* TiemposHeadline-Black.otf in Resources */,
 				B88F0C2E2A8F296D006D5D13 /* Preview Assets.xcassets in Resources */,
 				394E4BBF2B03D1B900DB48A8 /* Lato-Regular.ttf in Resources */,
 				B88F0C2A2A8F296D006D5D13 /* Assets.xcassets in Resources */,

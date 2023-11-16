@@ -12,21 +12,21 @@ struct ThemeSwitcherView: View {
     @EnvironmentObject private var themeManager:ThemeManager
     
     var body: some View {
-            VStack{
-                Text("\(themeManager.selectedTheme.themeName) is selected")
-                ForEach(0..<themeManager.themes.count, id: \.self){themeCount in
-                    Button(action: {
-                        withAnimation{
-                            themeManager.applyTheme(themeCount)
-                        }
-                    }, label: {
-                        Text("Change to \(themeManager.themes[themeCount].themeName)")
-                    })
-                }
-                .buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
-                Text("Secondary Color")
-                    .foregroundStyle(themeManager.selectedTheme.secondaryColor)
+        VStack(alignment: .center){
+            Text("\(themeManager.selectedTheme.themeName) is selected").foregroundStyle(themeManager.selectedTheme.primaryColor).font(themeManager.selectedTheme.title)
+            ForEach(0..<themeManager.themes.count, id: \.self){themeCount in
+                Button(action: {
+                    withAnimation{
+                        themeManager.applyTheme(themeCount)
+                    }
+                }, label: {
+                    Text("Change to \(themeManager.themes[themeCount].themeName)")
+                })
             }
+            .buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
+            Text("Secondary color in theme")
+                .foregroundStyle(themeManager.selectedTheme.secondaryColor).font(themeManager.selectedTheme.title)
+        }
     }
 }
 
