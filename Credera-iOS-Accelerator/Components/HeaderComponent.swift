@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HeaderComponent: View {
+    @AppStorage("isDarkMode") private var isDarkMode = false
+
     let title: String
     
     var body: some View {
@@ -17,7 +19,7 @@ struct HeaderComponent: View {
                 .frame(width: 50, height: 50)
             Text(title)
                 .font(Font.custom("AvenirNext-DemiBold", size: 17.0))
-                .foregroundColor(Constants.ColorScheme.quaternary)
+                .foregroundColor(isDarkMode ? .white : Constants.ColorScheme.midnightBlack)
                 .padding(.leading, -8)
         }
     }
