@@ -22,6 +22,8 @@
 		394E4BCC2B03D9D300DB48A8 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E4BCB2B03D9D300DB48A8 /* ThemeManager.swift */; };
 		394E4BCE2B03DC7600DB48A8 /* ThemeSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E4BCD2B03DC7600DB48A8 /* ThemeSwitcherView.swift */; };
 		39BA64AF2B053ED0004BF750 /* TiemposHeadline-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39BA64AE2B053ED0004BF750 /* TiemposHeadline-Black.otf */; };
+		39BA64B92B0BA6C0004BF750 /* SinglePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA64B82B0BA6C0004BF750 /* SinglePageView.swift */; };
+		39BA64BB2B0BAC30004BF750 /* ContentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA64BA2B0BAC30004BF750 /* ContentScreen.swift */; };
 		B8342F0E2A9685980065174E /* NavigationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F0D2A9685980065174E /* NavigationComponent.swift */; };
 		B8342F112A9687B70065174E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F102A9687B70065174E /* Constants.swift */; };
 		B8342F132A968E410065174E /* SampleCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8342F122A968E410065174E /* SampleCollectionView.swift */; };
@@ -85,6 +87,8 @@
 		394E4BCB2B03D9D300DB48A8 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		394E4BCD2B03DC7600DB48A8 /* ThemeSwitcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSwitcherView.swift; sourceTree = "<group>"; };
 		39BA64AE2B053ED0004BF750 /* TiemposHeadline-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TiemposHeadline-Black.otf"; sourceTree = "<group>"; };
+		39BA64B82B0BA6C0004BF750 /* SinglePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePageView.swift; sourceTree = "<group>"; };
+		39BA64BA2B0BAC30004BF750 /* ContentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentScreen.swift; sourceTree = "<group>"; };
 		B8342F0D2A9685980065174E /* NavigationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationComponent.swift; sourceTree = "<group>"; };
 		B8342F102A9687B70065174E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B8342F122A968E410065174E /* SampleCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionView.swift; sourceTree = "<group>"; };
@@ -249,6 +253,7 @@
 				B8342F392A96AC9D0065174E /* SampleStackView.swift */,
 				352A274E2ACC1992000A2A9F /* IntermediateView.swift */,
 				352A274F2ACC1992000A2A9F /* FinalView.swift */,
+				39BA64B82B0BA6C0004BF750 /* SinglePageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -327,6 +332,7 @@
 			children = (
 				352A27502ACC1993000A2A9F /* HomeScreen.swift */,
 				B84417DD2AA8FE2000F4BD08 /* SearchScreen.swift */,
+				39BA64BA2B0BAC30004BF750 /* ContentScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -482,6 +488,7 @@
 				352A27532ACC1993000A2A9F /* HomeScreen.swift in Sources */,
 				352A27512ACC1993000A2A9F /* IntermediateView.swift in Sources */,
 				B8342F242A969BDF0065174E /* UserService.swift in Sources */,
+				39BA64BB2B0BAC30004BF750 /* ContentScreen.swift in Sources */,
 				359427712AD4489C00A37EFD /* URLExtension.swift .swift in Sources */,
 				359427742AD448E000A37EFD /* MovieService.swift in Sources */,
 				B88F0C262A8F296C006D5D13 /* Credera_iOS_AcceleratorApp.swift in Sources */,
@@ -503,6 +510,7 @@
 				B8342F262A969BDF0065174E /* GitServiceImpl.swift in Sources */,
 				B8342F132A968E410065174E /* SampleCollectionView.swift in Sources */,
 				B8342F3C2A96ADAA0065174E /* SampleTableView.swift in Sources */,
+				39BA64B92B0BA6C0004BF750 /* SinglePageView.swift in Sources */,
 				B8342F112A9687B70065174E /* Constants.swift in Sources */,
 				B8342F352A969C1C0065174E /* SearchResult.swift in Sources */,
 				B8342F3A2A96AC9D0065174E /* SampleStackView.swift in Sources */,
