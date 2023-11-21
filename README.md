@@ -9,6 +9,8 @@
 2. Navigate to the project directory and run: `pod install`
 3. Open the ".xcworkspace" file (not the ".xcodeproj" file)
 
+Note: this is the Swift UI iOS accelerator. See the Swift version here: https://github.com/Credera/Credera-iOS
+
 ## Project Features
 This project is a starting point for a Swift UI application including:
 - Firebase Analytics
