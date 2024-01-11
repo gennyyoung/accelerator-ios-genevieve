@@ -24,7 +24,7 @@
                 - com.credera.mobile.Credera-iOS-Accelerator
 5. Include all necessary dependencies for Credera-iOS-Accelerator (i.e., Firebase) 
     - File > Add Package Dependencies...
-6. If pulling data request is not working -> deactive your Netskope Client
+6. If pulling data request is not working -> deactivate your Netskope Client
 
 ## Project Features
 This project is a starting point for a Swift UI application including:
