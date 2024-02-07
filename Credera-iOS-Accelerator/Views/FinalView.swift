@@ -24,7 +24,7 @@ struct FinalView: View {
                 .padding(.leading, 50).font(.headline)
                 .multilineTextAlignment(.center)
                 .frame(width: 300)
-        }.navigationBarTitle(Text("Final View"))
+        }.navigationTitle(Text("Final View"))
     }
 }
 

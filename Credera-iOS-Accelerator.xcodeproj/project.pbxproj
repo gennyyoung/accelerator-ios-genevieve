@@ -21,6 +21,9 @@
 		394E4BCA2B03D7D300DB48A8 /* ThemeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E4BC92B03D7D300DB48A8 /* ThemeCollection.swift */; };
 		394E4BCC2B03D9D300DB48A8 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E4BCB2B03D9D300DB48A8 /* ThemeManager.swift */; };
 		394E4BCE2B03DC7600DB48A8 /* ThemeSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E4BCD2B03DC7600DB48A8 /* ThemeSwitcherView.swift */; };
+		3958D0C82B2B646000D666AB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3958D0C72B2B646000D666AB /* README.md */; };
+		39B398B02B73F85D00FF8E11 /* ComponentsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B398AF2B73F85D00FF8E11 /* ComponentsScreen.swift */; };
+		39B398B22B73F86B00FF8E11 /* RadioComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B398B12B73F86B00FF8E11 /* RadioComponent.swift */; };
 		39BA64AF2B053ED0004BF750 /* TiemposHeadline-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39BA64AE2B053ED0004BF750 /* TiemposHeadline-Black.otf */; };
 		39BA64B92B0BA6C0004BF750 /* SinglePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA64B82B0BA6C0004BF750 /* SinglePageView.swift */; };
 		39BA64BB2B0BAC30004BF750 /* ContentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA64BA2B0BAC30004BF750 /* ContentScreen.swift */; };
@@ -86,6 +89,9 @@
 		394E4BC92B03D7D300DB48A8 /* ThemeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCollection.swift; sourceTree = "<group>"; };
 		394E4BCB2B03D9D300DB48A8 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		394E4BCD2B03DC7600DB48A8 /* ThemeSwitcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSwitcherView.swift; sourceTree = "<group>"; };
+		3958D0C72B2B646000D666AB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		39B398AF2B73F85D00FF8E11 /* ComponentsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsScreen.swift; sourceTree = "<group>"; };
+		39B398B12B73F86B00FF8E11 /* RadioComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioComponent.swift; sourceTree = "<group>"; };
 		39BA64AE2B053ED0004BF750 /* TiemposHeadline-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TiemposHeadline-Black.otf"; sourceTree = "<group>"; };
 		39BA64B82B0BA6C0004BF750 /* SinglePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePageView.swift; sourceTree = "<group>"; };
 		39BA64BA2B0BAC30004BF750 /* ContentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentScreen.swift; sourceTree = "<group>"; };
@@ -261,6 +267,7 @@
 		B88F0C192A8F296C006D5D13 = {
 			isa = PBXGroup;
 			children = (
+				3958D0C72B2B646000D666AB /* README.md */,
 				B8342F182A969BAC0065174E /* Services */,
 				B8342F0F2A9687A10065174E /* Constants */,
 				B88F0C242A8F296C006D5D13 /* Credera-iOS-Accelerator */,
@@ -333,6 +340,7 @@
 				352A27502ACC1993000A2A9F /* HomeScreen.swift */,
 				B84417DD2AA8FE2000F4BD08 /* SearchScreen.swift */,
 				39BA64BA2B0BAC30004BF750 /* ContentScreen.swift */,
+				39B398AF2B73F85D00FF8E11 /* ComponentsScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -342,6 +350,7 @@
 			children = (
 				B8342F0D2A9685980065174E /* NavigationComponent.swift */,
 				B88F0C272A8F296C006D5D13 /* HeaderComponent.swift */,
+				39B398B12B73F86B00FF8E11 /* RadioComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -450,6 +459,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3958D0C82B2B646000D666AB /* README.md in Resources */,
 				394E4BC52B03D5EC00DB48A8 /* Lato-Black.ttf in Resources */,
 				39BA64AF2B053ED0004BF750 /* TiemposHeadline-Black.otf in Resources */,
 				B88F0C2E2A8F296D006D5D13 /* Preview Assets.xcassets in Resources */,
@@ -499,6 +509,7 @@
 				352A275C2ACC2418000A2A9F /* CustomNavBar.swift in Sources */,
 				B84417DE2AA8FE2000F4BD08 /* SearchScreen.swift in Sources */,
 				B8342F312A969C1C0065174E /* Movie.swift in Sources */,
+				39B398B02B73F85D00FF8E11 /* ComponentsScreen.swift in Sources */,
 				394E4BCE2B03DC7600DB48A8 /* ThemeSwitcherView.swift in Sources */,
 				B8342F222A969BDF0065174E /* UserServiceImpl.swift in Sources */,
 				394E4BCC2B03D9D300DB48A8 /* ThemeManager.swift in Sources */,
@@ -509,6 +520,7 @@
 				352A27522ACC1993000A2A9F /* FinalView.swift in Sources */,
 				B8342F262A969BDF0065174E /* GitServiceImpl.swift in Sources */,
 				B8342F132A968E410065174E /* SampleCollectionView.swift in Sources */,
+				39B398B22B73F86B00FF8E11 /* RadioComponent.swift in Sources */,
 				B8342F3C2A96ADAA0065174E /* SampleTableView.swift in Sources */,
 				39BA64B92B0BA6C0004BF750 /* SinglePageView.swift in Sources */,
 				B8342F112A9687B70065174E /* Constants.swift in Sources */,

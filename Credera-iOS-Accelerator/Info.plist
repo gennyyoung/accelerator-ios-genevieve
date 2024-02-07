@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>StoryboardTabMode</key>
-	<false/>
+	<true/>
 	<key>UIAppFonts</key>
 	<array>
 		<string>TiemposHeadline-Black.otf</string>
