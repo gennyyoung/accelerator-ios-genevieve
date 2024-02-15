@@ -13,6 +13,8 @@ struct FinalView: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Final View Controller").font(.headline)
+                .multilineTextAlignment(.center)
             Button("Navigate to First View") {
                 navigationPath.removeAll()
             }.buttonStyle(themeManager.selectedTheme.primaryButtonStyle)
@@ -24,7 +26,7 @@ struct FinalView: View {
                 .padding(.leading, 50).font(.headline)
                 .multilineTextAlignment(.center)
                 .frame(width: 300)
-        }.navigationBarTitle(Text("Final View"))
+        }.navigationTitle(Text("Final View"))
     }
 }
 

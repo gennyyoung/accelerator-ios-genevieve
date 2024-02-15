@@ -54,7 +54,7 @@ struct ThemeSwitcherView: View {
                         .cornerRadius(20)
                 }
             }.padding(.leading, 10)
-        }.padding().navigationBarTitle(Text("Theme View"))
+        }.padding().navigationTitle(Text("Theme View"))
     }
 }
 
