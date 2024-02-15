@@ -54,6 +54,11 @@
 		B88F0C382A8F296D006D5D13 /* Credera_iOS_AcceleratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F0C372A8F296D006D5D13 /* Credera_iOS_AcceleratorTests.swift */; };
 		B88F0C422A8F296D006D5D13 /* Credera_iOS_AcceleratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F0C412A8F296D006D5D13 /* Credera_iOS_AcceleratorUITests.swift */; };
 		B88F0C442A8F296D006D5D13 /* Credera_iOS_AcceleratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F0C432A8F296D006D5D13 /* Credera_iOS_AcceleratorUITestsLaunchTests.swift */; };
+		B89E4C902B7AA942006739C6 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E4C8F2B7AA942006739C6 /* RadioView.swift */; };
+		B89E4C922B7AAD97006739C6 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E4C912B7AAD97006739C6 /* FormView.swift */; };
+		B89E4C942B7AB7E0006739C6 /* QRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E4C932B7AB7E0006739C6 /* QRView.swift */; };
+		B89E4C972B7AB893006739C6 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = B89E4C962B7AB893006739C6 /* CodeScanner */; };
+		B89E4C992B7ABA48006739C6 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E4C982B7ABA48006739C6 /* FilterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +131,10 @@
 		B88F0C3D2A8F296D006D5D13 /* Credera-iOS-AcceleratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Credera-iOS-AcceleratorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88F0C412A8F296D006D5D13 /* Credera_iOS_AcceleratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credera_iOS_AcceleratorUITests.swift; sourceTree = "<group>"; };
 		B88F0C432A8F296D006D5D13 /* Credera_iOS_AcceleratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credera_iOS_AcceleratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B89E4C8F2B7AA942006739C6 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
+		B89E4C912B7AAD97006739C6 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		B89E4C932B7AB7E0006739C6 /* QRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRView.swift; sourceTree = "<group>"; };
+		B89E4C982B7ABA48006739C6 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B89E4C972B7AB893006739C6 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +270,10 @@
 				352A274E2ACC1992000A2A9F /* IntermediateView.swift */,
 				352A274F2ACC1992000A2A9F /* FinalView.swift */,
 				39BA64B82B0BA6C0004BF750 /* SinglePageView.swift */,
+				B89E4C8F2B7AA942006739C6 /* RadioView.swift */,
+				B89E4C912B7AAD97006739C6 /* FormView.swift */,
+				B89E4C932B7AB7E0006739C6 /* QRView.swift */,
+				B89E4C982B7ABA48006739C6 /* FilterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -371,6 +385,9 @@
 			dependencies = (
 			);
 			name = "Credera-iOS-Accelerator";
+			packageProductDependencies = (
+				B89E4C962B7AB893006739C6 /* CodeScanner */,
+			);
 			productName = "Credera-iOS-Accelerator";
 			productReference = B88F0C222A8F296C006D5D13 /* Credera-iOS-Accelerator.app */;
 			productType = "com.apple.product-type.application";
@@ -443,6 +460,9 @@
 				Base,
 			);
 			mainGroup = B88F0C192A8F296C006D5D13;
+			packageReferences = (
+				B89E4C952B7AB893006739C6 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = B88F0C232A8F296C006D5D13 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -495,8 +515,10 @@
 				B8342F0E2A9685980065174E /* NavigationComponent.swift in Sources */,
 				B8342F302A969C1C0065174E /* GitRepo.swift in Sources */,
 				B8342F342A969C1C0065174E /* User.swift in Sources */,
+				B89E4C902B7AA942006739C6 /* RadioView.swift in Sources */,
 				352A27532ACC1993000A2A9F /* HomeScreen.swift in Sources */,
 				352A27512ACC1993000A2A9F /* IntermediateView.swift in Sources */,
+				B89E4C942B7AB7E0006739C6 /* QRView.swift in Sources */,
 				B8342F242A969BDF0065174E /* UserService.swift in Sources */,
 				39BA64BB2B0BAC30004BF750 /* ContentScreen.swift in Sources */,
 				359427712AD4489C00A37EFD /* URLExtension.swift .swift in Sources */,
@@ -515,11 +537,13 @@
 				394E4BCC2B03D9D300DB48A8 /* ThemeManager.swift in Sources */,
 				359427692AD3FB8B00A37EFD /* MovieModel.swift in Sources */,
 				394E4BCA2B03D7D300DB48A8 /* ThemeCollection.swift in Sources */,
+				B89E4C992B7ABA48006739C6 /* FilterView.swift in Sources */,
 				3594276D2AD3FBFB00A37EFD /* MovieViewModel.swift in Sources */,
 				B8342F362A969C1C0065174E /* GitServiceError.swift in Sources */,
 				352A27522ACC1993000A2A9F /* FinalView.swift in Sources */,
 				B8342F262A969BDF0065174E /* GitServiceImpl.swift in Sources */,
 				B8342F132A968E410065174E /* SampleCollectionView.swift in Sources */,
+				B89E4C922B7AAD97006739C6 /* FormView.swift in Sources */,
 				39B398B22B73F86B00FF8E11 /* RadioComponent.swift in Sources */,
 				B8342F3C2A96ADAA0065174E /* SampleTableView.swift in Sources */,
 				39BA64B92B0BA6C0004BF750 /* SinglePageView.swift in Sources */,
@@ -877,6 +901,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B89E4C952B7AB893006739C6 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B89E4C962B7AB893006739C6 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B89E4C952B7AB893006739C6 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B88F0C1A2A8F296C006D5D13 /* Project object */;
 }

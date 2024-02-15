@@ -25,7 +25,7 @@ struct HomeScreen: View {
             VStack(){
                 HeaderComponent(title: "Credera iOS Accelerator")
                 Spacer()
-                Text("MainTabBarApp: FirstViewController").font(.headline)
+                Text("First View Controller").font(.headline)
                     .multilineTextAlignment(.center)
                 Button("Navigate to Next Screen") {
                     navigationPath.append(.intermediateView)

@@ -13,6 +13,8 @@ struct IntermediateView: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Second View Controller").font(.headline)
+                .multilineTextAlignment(.center)
             Button("Navigate to Final View") {
                 navigationPath.append(.finalView)
             }.buttonStyle(themeManager.selectedTheme.primaryButtonStyle)

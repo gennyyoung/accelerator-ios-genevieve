@@ -18,17 +18,17 @@ struct RadioComponent: View {
     @State private var selectedSegmented: FavoriteColor = .red
     @State private var selectedMenu = 2;
     var body: some View {
-        VStack {
-            List {
-                Text("Inline View")
+        VStack(alignment: .center, spacing: 20)  {
+            VStack {
+                Spacer()
+                Text("Inline View").font(.system(size: 20, weight: .bold))
                 Picker("Favorite Color", selection: $selectedInline) {
                     Text("Blue").tag(FavoriteColor.blue)
                     Text("Red").tag(FavoriteColor.red)
                     Text("Green").tag(FavoriteColor.green)
                 }.pickerStyle(.inline)
                 
-                Spacer()
-                Text("Segmented View")
+                Text("Segmented View").font(.system(size: 20, weight: .bold))
                 // Menu View of Radio Buttons
                 Picker("Favorite Color", selection: $selectedSegmented) {
                     ForEach(FavoriteColor.allCases){ color in Text(color.rawValue.capitalized).tag(selectedSegmented.rawValue == color.rawValue)
@@ -36,19 +36,19 @@ struct RadioComponent: View {
                 }.pickerStyle(.segmented)
                 
                 Spacer()
-                Text("Menu View")
+                Text("Menu View").font(.system(size: 20, weight: .bold))
                 // Menu View of Radio Buttons
                 Picker("Favorite Color", selection: $selectedMenu) {
                     Text("Blue").tag(0)
                     Text("Red").tag(1)
                     Text("Green").tag(2)
                 }.pickerStyle(.menu)
-                
+                Spacer()
             }.scrollContentBackground(.hidden)
         }.padding(10)
     }
 }
 
-#Preview {
-    RadioComponent()
-}
+//#Preview {
+//    RadioComponent()
+//}
